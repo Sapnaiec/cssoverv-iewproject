@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px solid red;
+            height: 3000px;
+ background: cyan;
+        }
+        .div1{
+         border: 2px solid red;
+         width: 200px;
+         height: 200px;
+         margin: 30px;
+         display: inline-block;/*inline me lane ke liye */
+        }
+        #div1 {
+            position: relative;/* apne hi postion se left right and top bottam chnage hota h*/
+            top: 30px;
+            left: 40px;
+        }
+            #div2 {
+            position: absolute;/* main cointer se compare karke change hota h*/
+            top: 30px;
+            left: 40px;
+            background-color: blue;
+        }
+          #div3 {
+            position: fixed;/* scrollbar karne per bhi fix rahega or hide ni hoga  h*/
+           
+            right: 40px;
+            background-color: green;
+        }
+         #div4 {
+            position: sticky;/* 10px space milne ke bad moive ni hoga */
+           top: 40px;
+            right: 40px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1" id="div1">Div1</div>
+        <div class="div1" id="div2">Div2</div>
+        <div class="div1" id="div3">Div3</div>
+        <div class="div1" id="div4">Div4</div>
+    </div>
+</body>
+</html>
